@@ -1,0 +1,111 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Team Section Styles */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+    padding: 20px;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 25%;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Topic and Links Section Styles */
+section {
+    margin: 20px;
+}
+
+ul, ol {
+    margin: 10px 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+    h2 {
+        color: #2c3e50;
+    }
+
+    h3 {
+        color: #2980b9;
+    }
+
+    p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    ul {
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+    }
+
+    img {
+        border: 2px solid #34495e;
+        border-radius: 10px;
+    }
+
+
+    .image-container {
+        display: flex;
+        justify-content: space-around; /* Adjusts the spacing between images */
+        gap: 20px; /* Adds space between the images */
+        align-items: center; /* Vertically centers the images */
+    }
+    
+    .image-container img {
+        max-width: 100%; /* Ensures the image fits within its container */
+        height: auto; /* Maintains aspect ratio */
+    }

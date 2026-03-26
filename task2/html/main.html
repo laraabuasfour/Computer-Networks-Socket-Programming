@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .team-container2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+            padding: 20px;
+        }
+
+        .team-member {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 25%;
+            max-width: 300px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCS3320-Webserver</title><!--esm 3al web browser tab (need to check) -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+   
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to ENCS3320 - Computer Networks Webserver</h1>
+    </header>
+
+    <!-- Team Members Section -->
+    <section>
+        <h2>Team Members</h2>
+        
+        <div class="team-container2">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="h.png" alt="Hala's Photo">
+                <h3>Hala Sabobeh</h3>
+                <p>ID: 1220322</p>
+                <p>Projects done:</p>
+                <ul>
+                    <li>C Project</li>
+                    <li>Java Project</li>
+                    <li>Advanced Digital Project</li>
+                    <li>Organization Project</li>
+                </ul>
+                <p>Hobbies & Skills:</p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Reading</li>
+                    <li>Chess</li>
+                    <li>Cycling</li>
+                </ul>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="t.png" alt="Tasneem's Photo">
+                <h3>Tasneem Shelleh</h3>
+                <p>ID: 1220439</p>
+                <p>Projects done:</p>
+                <ul>
+                    <li>C Project</li>
+                    <li>Java Project</li>
+                    <li>Advanced Digital Project</li>
+                    <li>Organization Project</li>
+                </ul>
+                <p>Hobbies & Skills:</p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Reading</li>
+                    <li>Chess</li>
+                    <li>Cycling</li>
+                </ul>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="lara.png" alt="Lara's Photo">
+                <h3>Lara Asfour</h3>
+                <p>ID: 1221484</p>
+                <p>project's done:</p>
+                <ul>
+                    <li>C Project</li>
+                    <li>Java Project</li>
+                    <li>Advanced Digital Project</li>
+                    <li>Organization Project</li>
+                </ul>
+                <p>Hobbies & Skills:</p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Reading</li>
+                    <li>Chess</li>
+                    <li>Cycling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Networking Topic Section -->
+    <section>
+        <h2>Introduction to TCP and UDP</h2>
+        <p>
+            Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are two of the most widely used communication protocols in computer networking. Both protocols operate at the Transport Layer of the OSI model, but they serve different purposes and have distinct features.
+        </p>
+    
+        <h3><strong>Transmission Control Protocol (TCP)</strong></h3>
+        <p>
+            TCP is a connection-oriented protocol that ensures reliable communication between devices. It establishes a connection before data is transmitted and guarantees that data packets arrive in the correct order, without errors.
+        </p>
+        <ul>
+            <li><strong>Reliable Communication:</strong> TCP ensures that data is transmitted correctly by using acknowledgments and retransmissions in case of lost packets.</li>
+            <li><strong>Flow Control:</strong> TCP uses flow control mechanisms such as windowing to prevent congestion.</li>
+            <li><strong>Connection-Oriented:</strong> Before any data is transmitted, a connection must be established between the sender and receiver.</li>
+        </ul>
+    
+        <h3><strong>User Datagram Protocol (UDP)</strong></h3>
+        <p>
+            UDP, on the other hand, is a connectionless protocol. It does not establish a connection before data transmission and does not guarantee reliability. UDP is typically used for applications where speed is more important than reliability.
+        </p>
+        <ul>
+            <li><strong>Faster Communication:</strong> UDP has less overhead, making it faster than TCP for data transmission.</li>
+            <li><strong>No Flow Control:</strong> UDP does not manage traffic flow, which can lead to packet loss in congested networks.</li>
+            <li><strong>Connectionless:</strong> UDP sends data without establishing a formal connection between sender and receiver.</li>
+        </ul>
+    
+        <h3>Key Differences Between TCP and UDP</h3>
+        <ol>
+            <li><strong>Reliability:</strong> TCP is reliable, ensuring data is received correctly, while UDP is unreliable and does not guarantee data delivery.</li>
+            <li><strong>Speed:</strong> UDP is faster due to its minimal overhead, whereas TCP has more overhead because it guarantees delivery and ensures order.</li>
+            <li><strong>Connection:</strong> TCP is connection-oriented, while UDP is connectionless.</li>
+            <li><strong>Use Cases:</strong> TCP is used for applications like web browsing and file transfer, whereas UDP is used for real-time applications like video streaming and online gaming.</li>
+        </ol>
+    
+        <h3>Illustration of TCP and UDP</h3>
+        <p>
+            Below is an image that illustrates the key differences between TCP and UDP, showing how they open a connections, their data transmission behavior:
+        </p>
+        <div class="image-container">
+            <img src="TCP.jpg" alt="TCP vs UDP Comparison" width="600" >
+            <img src="UDP.jpg" alt="UDP vs TCP Comparison" width="600">
+        </div>
+        
+    
+        <h3><strong>Conclusion</strong></h3>
+        <p>
+            TCP and UDP are both essential for communication over networks. The choice between the two depends on the specific requirements of the application. While TCP is preferred for reliable communication, UDP is ideal for applications where speed is more important than reliability.
+        </p>
+    </section>
+    
+    <!-- Links Section -->
+    <section>
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="supporting_material_en.html">Supporting Material</a></li>
+            <li><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Textbook Website</a></li>
+            <li><a href="https://ritaj.birzeit.edu/" target="_blank">Ritaj Website</a></li>
+        </ul>
+    </section>
+</body>
+</html>

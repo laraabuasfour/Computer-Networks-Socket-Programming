@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <style>
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+            padding: 20px;
+        }
+
+        .team-member {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 25%;
+            max-width: 300px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCS3320-خادم الويب</title><!--مناسب للمتصفح (يحتاج التحقق)-->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- قسم العنوان -->
+    <header>
+        <h1>مرحبًا بكم في ENCS3320 - خادم الشبكات الكمبيوتر</h1>
+    </header>
+
+    <!-- قسم أعضاء الفريق -->
+    <section>
+        <div class="team-container">
+            <!-- عضو الفريق 1 -->
+            <div class="team-member">
+                <img src="h.png" alt="صورة حلا">
+                <h3>حلا سبوبة</h3>
+                <p>رقم الهوية: 1220322</p>
+                <p>المشاريع المنجزة:</p>
+                <ul>
+                    <li>مشروع C</li>
+                    <li>مشروع Java</li>
+                    <li>مشروع الدوائر الرقمية المتقدمة</li>
+                    <li>مشروع التنظيم</li>
+                </ul>
+                <p>الهوايات والمهارات:</p>
+                <ul>
+                    <li>البرمجة</li>
+                    <li>القراءة</li>
+                    <li>الشطرنج</li>
+                    <li>ركوب الدراجات</li>
+                </ul>
+            </div>
+            
+            <!-- عضو الفريق 2 -->
+            <div class="team-member">
+                <img src="t.png" alt="صورة تسنيم">
+                <h3>تسنيم شله</h3>
+                <p>رقم الهوية: 1220439</p>
+                <p>المهارات: البرمجة، الشبكات، استكشاف الأخطاء وإصلاحها.</p>
+                <p>الهوايات: القراءة، الشطرنج، وركوب الدراجات.</p>
+            </div>
+            <!-- عضو الفريق 3 -->
+            <div class="team-member">
+                <img src="lara.png" alt="صورة لارا">
+                <h3>لارا عصفور</h3>
+                <p>رقم الهوية: 1221484</p>
+                <p>المهارات: البرمجة، الشبكات، استكشاف الأخطاء وإصلاحها.</p>
+                <p>الهوايات: القراءة، الشطرنج، وركوب الدراجات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم موضوع الشبكات -->
+    <section>
+        <h2>مقدمة إلى TCP و UDP</h2>
+        <p>
+            بروتوكول التحكم بالنقل (TCP) وبروتوكول بيانات المستخدم (UDP) هما من أكثر بروتوكولات الاتصال استخدامًا في شبكات الكمبيوتر. كلا البروتوكولين يعملان في طبقة النقل من نموذج OSI، لكنهما يخدمان أغراضًا مختلفة ولهما ميزات مميزة.
+        </p>
+    
+        <h3><strong>بروتوكول التحكم بالنقل (TCP)</strong></h3>
+        <p>
+            TCP هو بروتوكول يعتمد على الاتصال ويضمن الاتصال الموثوق بين الأجهزة. يقوم بإنشاء اتصال قبل إرسال البيانات ويضمن وصول حزم البيانات بالترتيب الصحيح وبدون أخطاء.
+        </p>
+        <ul>
+            <li><strong>الاتصال الموثوق:</strong> يضمن TCP أن البيانات يتم إرسالها بشكل صحيح باستخدام الإشعارات وإعادة الإرسال في حال فقدان الحزم.</li>
+            <li><strong>التحكم في التدفق:</strong> يستخدم TCP آليات للتحكم في التدفق مثل النوافذ لمنع الازدحام.</li>
+            <li><strong>اتصال موجه:</strong> قبل إرسال أي بيانات، يجب إنشاء اتصال بين المرسل والمستقبل.</li>
+        </ul>
+    
+        <h3><strong>بروتوكول بيانات المستخدم (UDP)</strong></h3>
+        <p>
+            من ناحية أخرى، UDP هو بروتوكول غير معتمد على الاتصال. لا يقوم بإنشاء اتصال قبل
+        <div class="image-container">
+            <img src="TCP.jpg" alt="TCP vs UDP Comparison" width="600" >
+            <img src="UDP.jpg" alt="UDP vs TCP Comparison" width="600">
+        </div>
+        <section>
+            <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="supporting_material_ar.html">ملفات داعمة</a></li>
+                    <li><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">صفحة الكتاب</a></li>
+                    <li><a href="https://ritaj.birzeit.edu/" target="_blank">ريتاج</a></li>
+            </ul>
+        </section>
